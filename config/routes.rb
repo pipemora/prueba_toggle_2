@@ -1,8 +1,8 @@
-Micropost::Application.routes.draw do
-  devise_for :users
+Prueba_toggl::Application.routes.draw do
+  
   resources :posts
 
-  resources :users
+ devise_for :users, :controllers => { :omniauth_callbacks => "omniauth_callbacks" }
   root 'posts#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Micropost::Application.load_tasks
+Prueba_toggl::Application.load_tasks

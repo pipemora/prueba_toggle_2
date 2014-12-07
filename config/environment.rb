@@ -2,4 +2,4 @@
 require File.expand_path('../application', __FILE__)
 
 # Initialize the Rails application.
-Micropost::Application.initialize!
+Prueba_toggl::Application.initialize!

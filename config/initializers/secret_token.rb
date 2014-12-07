@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Micropost::Application.config.secret_key_base = '380e48ae2a8841a8e62b27c66b9e834fe569ff6c99609624440d4df37eb42ac5b1fd818e99574d32f055d75d34835669d36b496a04ecb000070d4169d4e9b4a5'
+Prueba_toggl::Application.config.secret_key_base = '380e48ae2a8841a8e62b27c66b9e834fe569ff6c99609624440d4df37eb42ac5b1fd818e99574d32f055d75d34835669d36b496a04ecb000070d4169d4e9b4a5'
