@@ -1,30 +1,16 @@
-<h1>Listing posts</h1>
-<%= link_to 'New Post', new_post_path, class: 'button' %>
+<section id="homepage-hero">
+<div class="row">
+<div class="medium-7 large-6 columns">
+<h1>Prueba Toggl</h1><br>
 
-<table>
-  <thead>
-    <tr>
-      <th>Content</th>
-      <th>User</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<br>
+</div>
+</div>
+<div class="row">
+<div class="large-4 medium-6 columns">
+  <%= link_to "Empieza Ahora", user_omniauth_authorize_path(:twitter), class: "large button hide-for-small" %>
 
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.content %></td>
-        <td><%= post.user.name %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+</div>
+</div>
 
-
-
-
+</section>

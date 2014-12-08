@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :omniauthable,
          :recoverable, :rememberable, :trackable, :validatable
   has_many :posts
+  has_many :tasks
+  has_many :projects
 
   def self.find_for_twitter_oauth(auth, signed_in_resource=nil)
  
